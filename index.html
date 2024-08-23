@@ -8,6 +8,53 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images\logo3.png" type="image/png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.container {
+            width: 70%;
+            max-width: 60%;
+            margin: 15px auto;
+            padding: 15px;
+            background-color: rgba(51, 48, 48, 0.8); /* Fondo blanco con transparencia */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        
+
+        label:hover {
+            background-color: #2c22b9;
+        }
+
+        input[type="radio"]:checked + span {
+            background-color: #2c22b9;
+        }
+
+        label span {
+            padding: 2px 5px;
+            border-radius: 4px;
+            display: inline-block;
+            background-color: #575757;
+        }
+
+        input[type="radio"]:checked + span {
+            background-color: #2d42a0;
+            color: rgb(7, 7, 7);
+        }
+
+		</style>
 	</head>
 	<body class="landing is-preload">
 
@@ -28,8 +75,8 @@
 											<li><a href="#pilar2">Aprender a hacer</a></li>
 											<li><a href="#pilar3">Aprender a vivir juntos</a></li>
 											<li><a href="#pilar4">Aprender a ser</a></li>
-											<li><a href="#pilar4">Cuestionario</a></li>
-											<li><a href="#pilar4">Contacto</a></li>
+											<li><a href="#cuestionario">Cuestionario</a></li>
+											<li><a href="#cta">Contacto</a></li>
 										</ul>
 									</div>
 								</li>
@@ -52,15 +99,15 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>Introducción<br /></h2>
+								<p>En un mundo en constante evolución, la educación debe adaptarse para preparar a los individuos para enfrentar los desafíos del siglo XXI. En 1996, el destacado economista y político francés Jacques Delors presentó un innovador enfoque educativo en su informe La educación encierra un tesoro, elaborado para la UNESCO. Este enfoque, conocido como los Cuatro Pilares de la Educación, ofrece un marco integral para la enseñanza y el aprendizaje, centrado en desarrollar competencias esenciales para el presente y el futuro.<br /><br />
+									Los Cuatro Pilares de la Educación —aprender a conocer, aprender a hacer, aprender a vivir juntos y aprender a ser— establecen una visión amplia y profunda de lo que significa educar en el siglo XXI. Estos pilares no solo buscan la acumulación de conocimientos, sino que enfatizan el desarrollo de habilidades prácticas, la capacidad de convivir y colaborar en una sociedad diversa, y el crecimiento personal continuo. A continuación, exploraremos cada uno de estos pilares en detalle y cómo pueden ser aplicados para enriquecer el proceso educativo.</p>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart major style1"><span class="label">Lorem</span></span></li>
 								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+								<li><span class="icon solid fa-heart major style3"><span class="label">Dolor</span></span></li>
+								<li><span class="icon fa-heart major style1"><span class="label">Lorem</span></span></li>
 							</ul>
 						</div>
 					</section>
@@ -70,81 +117,164 @@
 						<section id="pilar1" class="spotlight">
 							<div  class="image">
 								<video controls>
-									<source src="ruta_del_video.mp4" type="video/mp4">
-									<source src="ruta_del_video.webm" type="video/webm">
+									<source src="/videos/video1.mp4" type="video/mp4">
 									<!-- Texto alternativo -->
 									<p>Tu navegador no soporta el formato de video. Por favor, actualiza tu navegador o usa uno diferente.</p>
 							  	</video>
 							
 							</div>
 							<div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>Aprender a Conocer<br />
+								</h2>
+								<p>Se centra en el dominio de los instrumentos del saber, permitiendo a los individuos descubrir y comprender el mundo que los rodea. Este pilar implica no solo la adquisición de conocimientos, sino también el desarrollo de la capacidad de aprender a aprender. Se trata de despertar la curiosidad intelectual y fomentar el pensamiento crítico, habilidades esenciales para la vida en un entorno informativo y tecnológico.
+									<br />
+									<br />
+									Ventajas:
+									<li>Mejora la comprensión del entorno.</li>
+									<li>Despierta la curiosidad y el pensamiento crítico.</li>
+									<li>Fomenta la autonomía en el procesamiento de la información.</li>
+									<li>Enriquece la cultura general y la especialización en áreas concretas.</li>
+									<li>Aplicación: Para aplicar este pilar, se pueden utilizar herramientas como aplicaciones educativas, la investigación independiente y la integración de actividades que promuevan la atención, la memoria y el pensamiento crítico.</li>
+									</p>
 							</div>
 						</section>
 						<section id="pilar2" class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+							<div  class="image">
+								<video controls>
+									<source src="/videos/video2.mp4" type="video/mp4">
+									<!-- Texto alternativo -->
+									<p>Tu navegador no soporta el formato de video. Por favor, actualiza tu navegador o usa uno diferente.</p>
+							  	</video>
+							
+							</div>
 							<div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>Aprender a Hacer<br />
+								</h2>
+								<p>Se enfoca en la aplicación práctica de los conocimientos. En lugar de realizar tareas repetitivas, se busca desarrollar competencias que permitan a los individuos adaptarse a un entorno laboral y social en constante cambio. Este pilar aboga por la adquisición de habilidades prácticas y la capacidad de resolver problemas de manera creativa e innovadora.
+									<br />
+									<br />
+									Ventajas:
+									<li>Prepara a los estudiantes para enfrentar desafíos reales.</li>
+									<li>Desarrolla competencias clave como la comunicación, el trabajo en equipo y la solución de conflictos.</li>
+									<li>Fomenta la autonomía en el procesamiento de la información.</li>
+									</p>
 							</div>
 						</section>
 						<section id="pilar3" class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+							<div  class="image">
+								<video controls>
+									<source src="/videos/video3.mp4" type="video/mp4">
+									<!-- Texto alternativo -->
+									<p>Tu navegador no soporta el formato de video. Por favor, actualiza tu navegador o usa uno diferente.</p>
+							  	</video>
+							
+							</div>
 							<div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>Aprender a Vivir Juntos<br />
+								</h2>
+								<p>Promueve la empatía y el respeto por la diversidad cultural, social y religiosa. Este pilar enfatiza la importancia de construir una sociedad armoniosa, donde todos los individuos se comprendan y respeten mutuamente. Implica crear un contexto educativo inclusivo que fomente la cooperación y la igualdad de oportunidades.
+									<br />
+									<br />
+									Ventajas:
+									<li>Fomenta el respeto y la comprensión entre personas de diferentes culturas y orígenes</li>
+									<li>Ayuda a erradicar prejuicios y promover la inclusión.</li>
+									<li>Facilita la colaboración y el trabajo en equipo en entornos diversos.</li>
+									</p>
 							</div>
 						</section>
 						<section id="pilar4" class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+							<div  class="image">
+								<video controls>
+									<source src="/videos/video4.mp4" type="video/mp4">
+									<!-- Texto alternativo -->
+									<p>Tu navegador no soporta el formato de video. Por favor, actualiza tu navegador o usa uno diferente.</p>
+							  	</video>
+							
+							</div>
 							<div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>Aprender a Ser<br />
+								</h2>
+								<p>Se centra en el desarrollo integral del individuo, abarcando su crecimiento personal, emocional y social. Este pilar implica la auto-reflexión, la creatividad y la apreciación de la estética. La educación debe apoyar la individualidad y fomentar la auto-realización y el bienestar personal.
+									<br />
+									<br />
+									Ventajas:
+									<li>Fomenta la auto-reflexión y el crecimiento personal.</li>
+									<li>Estimula la creatividad y la apreciación de la estética.</li>
+									<li>Promueve el bienestar emocional y la realización personal.</li>
+									</p>
 							</div>
 						</section>
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
+				<div class="container" id="cuestionario">
+					<section id="quiz" class="spotlight">
+						<div class="content">
+							<h2>Cuestionario</h2>
+							<p>Leer cada pregunta cuidadosamente y seleccionar la respuesta que consideres correcta. Este cuestionario te ayudará a consolidar tu conocimiento sobre cómo aprender a conocer, aprender a hacer, aprender a vivir juntos y aprender a ser. ¡Buena suerte!</p>
+							<form id="quizForm">
+								<div class="question">
+									<h3>1. ¿Quién es el autor de los Cuatro Pilares de la Educación?</h3>
+									<label><input type="radio" name="q1" value="incorrecto1"><span>John Dewey</span></label><br>
+									<label><input type="radio" name="q1" value="incorrecto2"><span>Paulo Freire</span></label><br>
+									<label><input type="radio" name="q1" value="correcto"><span>Jacques Delors</span></label><br>
+								</div>
+					
+								<div class="question">
+									<h3>2. ¿Qué pilar de la educación se enfoca en la adquisición de conocimientos y la capacidad de aprender a aprender?</h3>
+									<label><input type="radio" name="q2" value="incorrecto1"><span>Aprender a hacer</span></label><br>
+									<label><input type="radio" name="q2" value="incorrecto2"><span>Aprender a vivir juntos</span></label><br>
+									<label><input type="radio" name="q2" value="correcto"><span>Aprender a conocer</span></label><br>
+								</div>
+					
+								<div class="question">
+									<h3>3. ¿Cuál de los siguientes pilares promueve el desarrollo de competencias prácticas y la adaptación a un entorno laboral cambiante?</h3>
+									<label><input type="radio" name="q3" value="incorrecto1"><span>Aprender a conocer</span></label><br>
+									<label><input type="radio" name="q3" value="incorrecto2"><span>Aprender a ser</span></label><br>
+									<label><input type="radio" name="q3" value="correcto"><span>Aprender a hacer</span></label><br>
+								</div>
+					
+								<div class="question">
+									<h3>4. ¿Qué pilar de la educación se centra en la empatía y el respeto por la diversidad cultural y social?</h3>
+									<label><input type="radio" name="q4" value="incorrecto1"><span>Aprender a hacer</span></label><br>
+									<label><input type="radio" name="q4" value="incorrecto2"><span>Aprender a conocer</span></label><br>
+									<label><input type="radio" name="q4" value="correcto"><span>Aprender a vivir juntos</span></label><br>
+								</div>
+					
+								<div class="question">
+									<h3>5. ¿Qué pilar de la educación busca el desarrollo personal, la auto-reflexión y la creatividad?</h3>
+									<label><input type="radio" name="q5" value="incorrecto1"><span>Aprender a vivir juntos</span></label><br>
+									<label><input type="radio" name="q5" value="incorrecto2"><span>Aprender a hacer</span></label><br>
+									<label><input type="radio" name="q5" value="correcto"><span>Aprender a ser</span></label><br>
+								</div>
+					
+								<div class="question">
+									<h3>6. Según Jacques Delors, ¿cuál es una de las ventajas de "aprender a conocer"?</h3>
+									<label><input type="radio" name="q6" value="incorrecto1"><span>Fomenta la repetición de tareas monótonas</span></label><br>
+									<label><input type="radio" name="q6" value="incorrecto2"><span>Limita la autonomía en el procesamiento de la información</span></label><br>
+									<label><input type="radio" name="q6" value="correcto"><span>Despierta la curiosidad intelectual</span></label><br>
+								</div>
+					
+								<div class="question">
+									<h3>7. ¿Cómo se puede aplicar el pilar "aprender a hacer" en el aula?</h3>
+									<label><input type="radio" name="q7" value="incorrecto1"><span>Leer un libro de teoría sobre circuitos eléctricos</span></label><br>
+									<label><input type="radio" name="q7" value="incorrecto2"><span>Discutir sobre circuitos eléctricos sin realizar ninguna actividad práctica</span></label><br>
+									<label><input type="radio" name="q7" value="correcto"><span>Elaborar un proyecto práctico como un circuito eléctrico</span></label><br>
+								</div>
+					
+								<div class="question">
+									<h3>8. ¿Qué aspecto del pilar "aprender a vivir juntos" se enfoca en la creación de un contexto educativo inclusivo?</h3>
+									<label><input type="radio" name="q8" value="incorrecto1"><span>Dividir a los estudiantes en grupos según su origen cultural</span></label><br>
+									<label><input type="radio" name="q8" value="incorrecto2"><span>Implementar un sistema de calificaciones que favorezca a los estudiantes de ciertas culturas</span></label><br>
+									<label><input type="radio" name="q8" value="correcto"><span>Crear un entorno en el que todos los estudiantes tengan las mismas oportunidades y puedan respetarse mutuamente</span></label><br>
+								</div>
+					
+								<input type="submit" value="Enviar respuestas">
+							</form>
+							<div id="result"></div>
 						</div>
 					</section>
+				</div>
 
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
@@ -177,8 +307,60 @@
 
 			</div>
 		<!-- https://creator.nightcafe.studio/studio     para imagenes-->
-		<!--      para videos-->
+		<!--  https://lumen5.com    para videos-->
 		<!-- Scripts -->
+
+		<script>
+			document.getElementById('quizForm').addEventListener('submit', function(event) {
+				event.preventDefault();
+			
+				// Definir las respuestas correctas
+				const correctAnswers = {
+					q1: 'correcto',
+					q2: 'correcto',
+					q3: 'correcto',
+					q4: 'correcto',
+					q5: 'correcto',
+					q6: 'correcto',
+					q7: 'correcto',
+					q8: 'correcto'
+				};
+			
+				let score = 0;
+				let feedback = '';
+			
+				// Verificar respuestas
+				for (let question in correctAnswers) {
+					const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+					if (selectedAnswer) {
+						if (selectedAnswer.value === correctAnswers[question]) {
+							score++;
+						} else {
+							feedback += `<p>Pregunta ${question.slice(1)}: Respuesta incorrecta. La respuesta correcta es ${getCorrectAnswer(question)}.</p>`;
+						}
+					} else {
+						feedback += `<p>Pregunta ${question.slice(1)}: No se seleccionó respuesta. La respuesta correcta es ${getCorrectAnswer(question)}.</p>`;
+					}
+				}
+			
+				feedback += `<p>Tu puntaje: ${score} de ${Object.keys(correctAnswers).length}</p>`;
+				document.getElementById('result').innerHTML = feedback;
+			});
+			
+			function getCorrectAnswer(question) {
+				switch (question) {
+					case 'q1': return 'Jacques Delors';
+					case 'q2': return 'Aprender a conocer';
+					case 'q3': return 'Aprender a hacer';
+					case 'q4': return 'Aprender a vivir juntos';
+					case 'q5': return 'Aprender a ser';
+					case 'q6': return 'Despierta la curiosidad intelectual';
+					case 'q7': return 'Elaborar un proyecto práctico como un circuito eléctrico';
+					case 'q8': return 'Crear un entorno en el que todos los estudiantes tengan las mismas oportunidades y puedan respetarse mutuamente';
+					default: return '';
+				}
+			}
+		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -186,6 +368,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		
+
+				
 
 	</body>
 </html>
